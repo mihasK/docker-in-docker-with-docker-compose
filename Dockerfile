@@ -1,5 +1,3 @@
-FROM docker:latest
+FROM docker:dind
 
-MAINTAINER Mikhail Koipish
-
-RUN apk update && apk add py-pip && pip install docker-compose
+RUN apk update && apk add py-pip
